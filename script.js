@@ -1,18 +1,18 @@
-var defaultarray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var defaultArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 document.addEventListener("DOMContentLoaded", function (event) {
-  addition(defaultarray);
+  addition(defaultArray);
 });
 function sortfunction() {
-  const sortarray = defaultarray.sort((a, b) => a - b);
-  addition(sortarray)
-  defaultarray = sortarray;
+  const sortArray = defaultArray.sort((a, b) => a - b);
+  addition(sortArray)
+  defaultArray = sortArray;
 }
 function sufflefunction() {
-  const shuffled = defaultarray.sort(() => Math.random() - 0.5);
+  const shuffled = defaultArray.sort(() => Math.random() - 0.5);
   addition(shuffled)
 }
 function addition(myarray) {
-  for (i = 0; i < defaultarray.length; i++) {
-    document.getElementById("number" + i).innerHTML = defaultarray[i];
+  for (i = 0; i < defaultArray.length; i++) {
+    document.getElementById("number" + i).innerHTML = defaultArray[i];
   }
 }
