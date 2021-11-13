@@ -16,3 +16,5 @@ function addition(myarray) {
     document.getElementById("number" + i).innerHTML = defaultArray[i];
   }
 }
+
+// chinmayee
